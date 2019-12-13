@@ -28,7 +28,6 @@ it('renders without crashing', () => {
     const wrapper = library.render(
         <span className='greet'>hello world</span>
     );
-
     console.log(wrapper.debug())
     const element = wrapper.queryByText(/hello/i)
     expect(element).toBeTruthy();
