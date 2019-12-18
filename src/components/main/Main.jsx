@@ -14,6 +14,8 @@ import MessageContent from "../content/message-list/message-content/MessageConte
 
 import { Route, Switch, withRouter } from "react-router-dom";
 
+import { useLocalStorage } from "../../utils";
+
 import { getUserContacts } from "../contact-list/actions/contact-list.actions";
 import { getLabels } from "../sidebar/sidebar.actions";
 
@@ -36,9 +38,11 @@ import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
 const Main = (props) => {
   const [signedInUser, setSignedInUser] = useState();
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useLocalStorage('view', false);
   const [searchterm, setSearchterm] = useState(false);
-  const [filter, setFilter] = useState('Test Email');
+  const [filter, setFilter] = useState(false);
+  const [filterType, setFilterType] = useState("");
+
 
   useEffect(() => {
     /* Label list is fetched from here 
@@ -143,6 +147,9 @@ const Main = (props) => {
               searchterm={searchterm}
               toggle={toggle}
               filter={filter}
+              setFilter={setFilter}
+              filterType={filterType}
+              setFilterType={setFilterType}
             />
           ) 
         }}
@@ -193,6 +200,8 @@ const Main = (props) => {
           toggle={toggle}
           filter={filter}
           setFilter={setFilter}
+          filterType={filterType}
+          setFilterType={setFilterType}
         />
 
         <section
@@ -248,6 +257,8 @@ const Main = (props) => {
           toggleDash={toggleDash}
           filter={filter}
           setFilter={setFilter}
+          filterType={filterType}
+          setFilterType={setFilterType}
         />
 
         <section className="main hbox">
