@@ -18,11 +18,11 @@ const LandingPage = () => {
                 <div className="logo">
                     Tagger
                 </div>
-                <div>
+                <div className="nav-options">
                     <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>   
-                    <li><a href="/inbox">Try It</a></li>  
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>   
+                        <li><a href="/inbox">Try It</a></li>  
                     </ul>  
                 </div>
             </nav>

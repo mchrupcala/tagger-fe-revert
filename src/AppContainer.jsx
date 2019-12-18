@@ -16,7 +16,7 @@ import {
   AUTH_SUCCESS,
   AUTH_FAIL,
   AUTH_IN_PROGRESS
-} from "./constants";
+} from "./constants/action-types";
 
 
 const AppContainer = (props) => {

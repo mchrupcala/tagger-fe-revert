@@ -1,4 +1,4 @@
-import { MAX_RESULTS } from "../constants";
+import { MAX_RESULTS } from "../constants/action-types";
 import { getBody, isHTML } from './utils';
 
 export const getContactList = async () => {
