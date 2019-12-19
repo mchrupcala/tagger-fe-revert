@@ -20,7 +20,7 @@ import {
 
 
 const AppContainer = (props) => {
-  const [signInStatus, setSignInStatus] = useState(SIGNED_OUT);
+  const [signInStatus, setSignInStatus] = useState(SIGNED_OUT); 
   const [googleUser, setGoogleUser] = useState(undefined);
   const [id_token, setId_Token] = useState(undefined);
   useEffect(() => {

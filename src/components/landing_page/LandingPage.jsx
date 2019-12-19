@@ -37,6 +37,9 @@ const LandingPage = () => {
                         <div>
                             <h3>Stay Connected.</h3>
                         <p>Whoever you're talking to -- clients, friends, or family -- stay in touch and see your connections right in your dashboard. You'll see stats that show you how frequently you email eachother, the last date that you contacted them, and more, right next to your messages.</p>
+                        <br></br>
+                            <h4 className ='but'><strong>...but first</strong></h4>
+                            <button className= 'lbutton'><a href= '/inbox'>Get Connected</a></button>
                         </div>
                         <img className="product-img" src={img2}></img>
                     </div>
