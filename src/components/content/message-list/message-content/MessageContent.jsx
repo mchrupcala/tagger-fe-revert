@@ -28,7 +28,8 @@ const MessageContent = (props) => {
     props.getEmailMessage(messageId);
   }, []);
 
-  // Wasn't sure how to split componentDidMount and componentDidUpdate within a single useEffect call and get it to work so here it is split into two useEffect calls.
+  // Wasn't sure how to split componentDidMount and componentDidUpdate 
+  //within a single useEffect call and get it to work so here it is split into two useEffect calls.
   useEffect(() => {
     const { emailMessageResult } = props;
 

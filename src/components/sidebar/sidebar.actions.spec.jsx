@@ -1,26 +1,29 @@
-import expect from 'expect'
-import actions from './sidebar.actions'
-import {getLabelList} from '../../api'
-import { Item } from 'react-bootstrap/lib/Pagination'
+// import expect from 'expect'
+// import * as actions from './sidebar.actions'
 
-describe('actions', () => {
+// const mockStore = configureStore()
+// const store = mockStore()
 
-    function stateBefore(){
-        return{
-            lableLists
-        }
-    }
+// describe('actions', () => {
 
-    const action = {
-        type: 'GET_LABELS',
-        payload: 'labelList'
-    }
+//     function stateBefore(){
+//         return{
+//             actions
+//         }
+//     }
 
-    it('should add labels', () => {
-        const action = {}
-        const actual = actions(stateBefore(), action)
-        const expected = {
-            labelLists
-        }
-    })
-})
+//     const action = {
+//         type: 'GET_LABELS',
+//         payload: 'labelList'
+//     }
+//     it('should add labels', () => {
+//         const action = {}
+//         const actual = actions(stateBefore(), action)
+//         const expected = {
+//             labelLists
+//         }
+//         test('getting labels added', () => {
+
+//         })
+//     })
+// })

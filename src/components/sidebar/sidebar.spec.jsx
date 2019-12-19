@@ -1,27 +1,24 @@
-import configureStore from 'redux-mock-store';
+// import configureStore from 'redux-mock-store';
+// import {labelsResult, labels} from '../sidebar/sidebar.reducers'
 
-import * as selectActions from '../sidebar/sidebar.actions'
-import { getLabelList } from '../../api';
+// const mockStore = configureStore()
+// const store = mockStore()
 
-const mockStore = configureStore()
-const store = mockStore()
+// describe('sidebar.actions', () =>{
+//     beforeEach(() => {
+//         store.clearActions();
+//     })
+// })
 
-describe('sidebar.actions', () =>{
-    beforeEach(() => {
-        store.clearActions();
-    })
-})
-
-describe('getLabels', () => {
-    test('dispatches correct action and payload', () => {
-        const expectedActions =[
-            {
-                'payload': 'getLabelList',
-                'type': 'GET_LABELS'
-            }
-        ]
-
-        store.dispatch(selectActions.getLabels(getLabelList))
-        expect(store.getActions()).toEqual(expectedActions)
-    })
-})
+// describe('getLabels', () => {
+//     test('dispatches correct action and payload', () => {
+//         const expectedActions =[
+//             {
+//                 'payload': 'labelList',
+//                 'type': 'GET_LABELS'
+//             }
+//         ]
+//         store.dispatch(labelsResult.GET_LABELS(labels))
+//         expect(store.getActions()).toEqual(expectedActions)
+//     })
+// })
