@@ -40,19 +40,23 @@ const AppContainer = props => {
       });
   };
 
-  const onClick = () => {
-    const googleAuthInstance = window.gapi.auth2.getAuthInstance();
-    googleAuthInstance.grantOfflineAccess().then(res => onSignIn(res));
-  };
+//offlineAccess is needed so we can ...store the user profile?
 
-  // const onSignout = () => {
-  //   props.signOut();
-  // }
+  // const onClick = () => {
+  //   const googleAuthInstance = window.gapi.auth2.getAuthInstance();
+  //   googleAuthInstance.grantOfflineAccess().then(res => onSignIn(res));
+  // };
+
+  const onSignout = () => {
+    props.signOut();
+  }
 
   const onSignIn = res => {
     const url = "https://taggerhq.herokuapp.com/postfe";
+
     axios.post(url, res).then(res => console.log(res));
     signIn().then(onSignInSuccess);
+    console.log(googleUser)
   };
 
   const onSignInSuccess = googleUser => {
@@ -67,7 +71,7 @@ const AppContainer = props => {
     } else if (signInStatus === AUTH_IN_PROGRESS) {
       return <Authenticating />;
     } else {
-      return <Login onSignIn={onClick} />;
+      return <Login onSignIn={onSignIn} />;
     }
   };
 

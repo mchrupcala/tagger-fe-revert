@@ -117,11 +117,21 @@ function OutsideAlerter(props) {
 }
 //**
 //*
+// console.log(props);
+  let email = 'a';
+  let fullName = 'a';
+  let picUrl = 'a';
 
-  const userInfo = props.googleUser.w3;
-  const email = userInfo.U3;
-  const fullName = userInfo.ig;
-  const picUrl = userInfo.Paa;
+if (props.googleUser!== undefined) {
+  const userInfo = props.googleUser.Qt;
+  email = userInfo.zu;
+  fullName = userInfo.Ad;
+  picUrl = userInfo.UK;
+}
+
+  
+
+
 
   return (
     <div className="header-container">

@@ -124,6 +124,7 @@ const Main = (props) => {
 
   const renderLabelRoutes = (props) => {
     const { labelsResult } = props;
+    console.log(props.googleUser)
     return labelsResult.labels.map(el => (
       
       <Route
