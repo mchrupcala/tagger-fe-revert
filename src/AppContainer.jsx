@@ -51,6 +51,8 @@ const AppContainer = props => {
     props.signOut();
   }
 
+  
+
   const onSignIn = res => {
     const url = "https://taggerhq.herokuapp.com/postfe";
 
