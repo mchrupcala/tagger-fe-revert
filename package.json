@@ -15,6 +15,7 @@
     "jest-transform-css": "^2.0.0",
     "moment": "^2.24.0",
     "node-sass": "^4.13.0",
+    "now": "^17.1.1",
     "postcss": "*",
     "react": "^16.10.2",
     "react-animated-css": "^1.2.1",
@@ -31,6 +32,7 @@
     "redux": "^4.0.4",
     "redux-thunk": "^2.3.0",
     "sass-lint": "*",
+    "secrets": "^0.1.0",
     "update": "^0.7.4"
   },
   "devDependencies": {

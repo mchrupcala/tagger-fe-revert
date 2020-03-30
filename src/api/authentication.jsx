@@ -1,9 +1,7 @@
 export const signIn = () => {
   return window.gapi.auth2
     .getAuthInstance()
-    .signIn({
-      prompt: 'consent'
-    })
+    .signIn()
 }
 
 export const initGmailClient = (apiKey, clientId) => {
