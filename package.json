@@ -14,7 +14,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest-transform-css": "^2.0.0",
     "moment": "^2.24.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "now": "^17.1.1",
     "postcss": "*",
     "react": "^16.10.2",
